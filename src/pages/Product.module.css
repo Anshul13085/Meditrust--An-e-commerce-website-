@@ -1,0 +1,224 @@
+.container {
+    background-color: #ffeae6;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .searchBar {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1rem;
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.25rem 0;
+  }
+  
+  .packetSize {
+    margin-top: auto;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .addToCartContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantityControl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.quantityControl button {
+  width: 25px;
+  height: 25px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #ccc;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.quantityControl input {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+  
+  .addButton {
+    padding: 0.6rem 1rem;
+    background-color: #0a7cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+     margin: 1rem auto
+  }
+  
+  .addButton:hover {
+    background-color: #005ecc;
+  }
+
+  .topButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .navButton {
+    background-color: #0a7cff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    background-color: #005ecc;
+  }
+  
+  .navButton {
+    padding: 8px 16px;
+    margin: 10px;
+    background-color: #0a7cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .navButton:hover {
+    background-color: #005ecc;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-weight: bold;
+    animation: fadein 0.3s ease;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+ .recommendedCard {
+  border: 2px solid #4caf50;
+  position: relative;
+}
+
+.recommendedBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.quantityAddContainer {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.quantityWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-right: 10px;
+}
+
+.recommendedQtyButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.recommendedQtyButton:hover {
+  background-color: #388e3c;
+}
+  
+  

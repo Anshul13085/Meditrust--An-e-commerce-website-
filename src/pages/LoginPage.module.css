@@ -1,0 +1,51 @@
+/* Apply background image to the entire body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes up the full height of the screen */
+    background: url('./login_background.jpg') no-repeat center center/cover; /* Add background image */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center center;
+    color: #fff; /* Make text white for contrast */
+}
+
+.authContainer {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    color: #333; /* Dark text for contrast in the auth container */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

@@ -1,0 +1,117 @@
+/* IndexPage.module.css */
+
+.indexBody {
+    min-height: 100vh; /* Ensure full screen height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('./home_background.jpg') no-repeat center center/cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    
+  background: linear-gradient(to right, #007bff, #0d6efd);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between; /* This ensures the logo, nav, and user section are spaced out */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navItem {
+    margin: 0 15px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroTitle {
+    font-size: 2.5rem;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.content {
+    flex: 1; /* Take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.navButton {
+    padding: 8px 16px;
+    margin: 10px;
+    background-color: #0a7cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .navButton:hover {
+    background-color: #005ecc;
+  }
+  
+  .logoutButton {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c82333;
+  }
